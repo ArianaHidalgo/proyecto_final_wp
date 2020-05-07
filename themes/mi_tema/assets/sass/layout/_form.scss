@@ -12,3 +12,11 @@ button{
     border-radius: 20px;
     border: 3px solid $cele;
 }
+@media (max-width: 568px){
+    form{
+        width: 240px;
+        margin: auto;
+        padding: 10px 0;
+        font-family: $play;
+    }
+}  

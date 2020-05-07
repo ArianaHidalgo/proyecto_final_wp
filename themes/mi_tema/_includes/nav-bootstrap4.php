@@ -1,12 +1,12 @@
-<nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
+<nav class="navbar navbar-expand-lg navbar-light bg-gray" role="navigation">
 	<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->
-		<a class="navbar-brand" href="<?php bloginfo('url') ?>">Navbar</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+		<a class="navbar-brand" href="<?php bloginfo('url') ?>"><img src="assets/img/logo-azir.svg" alt=""></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
 		<?php if ( has_nav_menu( 'header-menu' ) ) { ?>
 			<?php wp_nav_menu( array(
 				'theme_location'	=> 'header-menu',

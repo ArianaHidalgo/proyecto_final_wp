@@ -20,7 +20,7 @@
 .header {
   width: 100%;
   height: 300%;
-  background-image: url("../img/fondo.png");
+  background-image: url("../images/fondo.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   opacity: 0.9;
@@ -79,7 +79,7 @@
   .header {
     width: 100%;
     height: 200px;
-    background-image: url("../img/fondo.png");
+    background-image: url("../images/fondo.png");
     background-position: left;
     background-repeat: no-repeat;
     opacity: 0.9;
@@ -134,7 +134,7 @@
 }
 .article .article_encab {
   color: #5EADA1;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 0;
 }
 .article .article_title {
@@ -165,12 +165,14 @@
 }
 
 .article button {
-  background-color: #818181;
-  color: #FFFFFF;
+  position: relative;
+  bottom: 150px;
   border-radius: 20px;
   border: 2px solid rgba(152, 147, 147, 0.15);
-  margin-left: 50px;
+  margin-left: 120px;
   width: 127px;
+  background-color: #818181;
+  color: #FFFFFF;
 }
 
 @media (max-width: 568px) {
@@ -180,6 +182,17 @@
 
   .img {
     margin: 12px 0 22px 28px;
+  }
+
+  .article button {
+    position: relative;
+    bottom: 1px;
+    border-radius: 20px;
+    border: 2px solid rgba(152, 147, 147, 0.15);
+    margin-left: 60px;
+    width: 127px;
+    background-color: #818181;
+    color: #FFFFFF;
   }
 }
 .main {
@@ -286,6 +299,7 @@
   border: 5px solid #8CEAE3;
   font-family: "Playfair Display", serif;
   font-weight: 700;
+  width: 160px;
 }
 
 .section_extra .section_encab2 {
@@ -318,16 +332,25 @@ button {
   border: 3px solid #8CEAE3;
 }
 
+@media (max-width: 568px) {
+  form {
+    width: 240px;
+    margin: auto;
+    padding: 10px 0;
+    font-family: "Playfair Display", serif;
+  }
+}
 .footer {
   background-color: #C3C4C4;
   text-align: center;
   width: 100%;
-  height: 250px;
+  height: 230px;
 }
 .footer .footer_icon {
   color: #FFFFFF;
   font-size: 22px;
   padding: 12px;
+  height: 200px;
 }
 .footer .footer_text {
   width: 650px;
@@ -349,6 +372,12 @@ button {
 @media (max-width: 568px) {
   .footer {
     width: 100%;
+  }
+
+  .footer .footer_text {
+    width: 100%;
+    margin-left: auto;
+    font-size: 12px;
   }
 }
 

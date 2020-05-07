@@ -34,7 +34,8 @@ function dl_enqueue_style() {
 	wp_register_style( 'flickity', get_theme_file_uri('/assets/css/flickity.css'), null, '2.1.0', 'screen' );
 	wp_register_style( 'fontawesome', get_theme_file_uri('/assets/css/fontawesome.css'), null, '5.6.3', 'screen' );
 	wp_register_style( 'main_style', get_theme_file_uri('/assets/css/style.css'), $deps, $theme_data->get('Version'), 'screen' );
-
+	wp_register_style( 'my_style' , get_theme_file_uri('assets/css/main.css'), $deps, $theme_data->get('Version'), 'screen' );
+	wp_register_style( 'googlefonts' ,'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Salsa&display=swap');
 
 	/* Enqueue Styles */
 	if ( $theme_options['slider']['flexslider'] ) {
@@ -50,7 +51,16 @@ function dl_enqueue_style() {
 	}
 
 	wp_enqueue_style( 'main_style' );
+	wp_enqueue_style( 'my_style' );
 
 }
 
 add_action( 'wp_enqueue_scripts', 'dl_enqueue_style' );
+
+
+function load_fonts() {
+	wp_enqueue_style('googleFonts');
+}
+add_action('wp_enqueue_scripts', 'load_fonts');
+
+

@@ -39,11 +39,13 @@
     @extend %text
 }
  .article button{
-     @include gray-full;
+     position: relative;
+     bottom: 150px;
      border-radius: 20px;
      border: 2px solid $pio;
-     margin-left: 50px;
+     margin-left: 120px;
      width: 127px;
+     @include gray-full;
  }
 
  @media (max-width: 568px){
@@ -52,5 +54,14 @@
     }
     .img{
        margin: 12px 0 22px 28px ;
+    }
+    .article button{
+        position: relative;
+        bottom: 1px;
+        border-radius: 20px;
+        border: 2px solid $pio;
+        margin-left: 60px;
+        width: 127px;
+        @include gray-full;
     }
 }  
