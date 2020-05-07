@@ -1,0 +1,56 @@
+.section {
+    padding: 50px;
+    background-color: $pio;
+    img{
+        width: 100%;
+        height: auto;
+    }       
+}
+.section_detalle{
+    .section_encab{
+        color: $azi;
+        font-family: $play;
+        font-size: $medium;
+        font-weight: $bold;
+        font-style: italic;
+        margin-bottom: -10px;
+    }
+    .section_tit{
+        color: $yar;
+        font-family: $play;
+        font-size: $large;
+        font-weight: $bold;
+    }
+    .section_conte{
+        font-family: $play;
+        font-size: $small;
+        color: $yar;
+        padding: 12px 0;
+    }
+    button{
+        background-color: $azi;
+        border-radius: 20px;
+        padding-left: 20px;
+        color: $white;
+        padding: 12px;
+        margin: 30px;
+        border: 5px solid $cele;
+        font-family: $play;
+        font-weight: $bold;
+    }
+}
+.section_extra{
+    .section_encab2{
+        color: $azi;
+        font-family: $play;
+        padding: 8px;
+    }
+    .section_cont2{
+        color: $yar;
+    }
+}
+@media (max-width: 568px){
+    .section{
+        width: 105%;
+    }
+}  

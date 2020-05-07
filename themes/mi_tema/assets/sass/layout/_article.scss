@@ -1,0 +1,56 @@
+.article {
+    background-color: $hol;
+    padding: 40px;
+    img{
+        width: 80%;
+        margin: auto;
+    }
+    .article_encab{
+        color: $je;
+        font-weight: $bold;
+        margin-bottom: 0;
+        @extend %text
+    }
+    .article_title{
+        color: $white;
+        font-family: $play;
+        font-size: $large;
+        font-weight: $bold;
+    }
+    .article_conte{
+        color: $yar;
+        font-family: $play;
+        font-size: $small;
+
+    }
+}
+.article_box i{ 
+    position: relative;
+    top: 3px;
+    float: left;
+    padding-left: 12px;
+    padding-right:12px;
+    color:$je;
+    font-size: $medium;
+}
+.article_box h3{
+    color: $white;
+    font-weight: $bold;
+    @extend %text
+}
+ .article button{
+     @include gray-full;
+     border-radius: 20px;
+     border: 2px solid $pio;
+     margin-left: 50px;
+     width: 127px;
+ }
+
+ @media (max-width: 568px){
+    .article{
+        width: 105%;
+    }
+    .img{
+       margin: 12px 0 22px 28px ;
+    }
+}  

@@ -1,0 +1,105 @@
+.header{
+    width: 100%;
+    height: 300%;
+    background-image: url("../img/fondo.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    opacity: 0.9;
+    position: relative;
+    &:before{
+        content: "";
+        position: absolute;
+        top:0;
+        width: 100%;
+        height: 300%;
+        background: $yar;
+        position: absolute;
+        opacity: 0.2;
+        z-index: -1;
+    }
+    .header_titulo{
+        width: 620px;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        .header_tit{
+            font-family: $play;
+            font-size: $xx-large;
+        }
+        .header_tit2{
+            font-family: $play;
+            font-size: $small;
+        }
+        .header_sub{
+            font-size: $medium;
+            margin: 0;
+        }
+        .header_button{
+            border: 3px solid $cele;
+            width: 180px;
+            background-color: $cal;
+            color: $white;
+            border-radius: 20px;
+            margin-top: 42px;
+        }
+    }
+}
+.header_titulo:hover .header_button{
+    background-color: $gray;
+    color: $cal;
+    width: 200px;
+}
+
+@media (max-width: 568px) {
+    .header{
+    width: 100%;
+    height: 200px;
+    background-image: url("../img/fondo.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    position: relative;
+    &:before{
+        content: "";
+        position: absolute;
+        top:0;
+        width: 100%;
+        height: 200px;
+        background: $yar;
+        position: absolute;
+        opacity: 0.2;
+        z-index: -1;
+    }
+    .header_titulo{
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        top: 80px;
+        color: $white;
+        .header_tit{
+            font-family: $play;
+            font-size: $sla;
+        }
+        .header_tit2{
+            font-family: $play;
+            font-size: $entre;
+        }
+        .header_sub{
+            font-size: $mini;
+            margin: 0;
+        }
+        .header_button{
+            border: 3px solid $cele;
+            width: 100px;
+            border-radius: 20px;
+            margin-top: 5px;
+            @include verde-full;
+        }
+    }
+}
+}
