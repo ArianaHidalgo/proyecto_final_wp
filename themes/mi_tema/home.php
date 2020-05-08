@@ -82,12 +82,12 @@
             <button>INFORMACION Y RESERVAS</button>
         </div>
         <div class="section_extra col-xs-12 col-md-3">
-            <img src="/assets/img/comida.jpg" alt="">
+        <img src="<?php echo get_theme_file_uri() ?>/assets/images/comida.jpg" alt="Gato comiendo" class="w-100 h-auto">
             <h3 class="section_encab2">Alimento Premium</h3>
             <p class="section_cont2">Zona ambientada especialmente para su alimentacion, con platos de ceramica sanitizados, sistema de rotacion automatica de agua y juegos estimulantes de apetito</p>
         </div>
         <div class="section_extra col-xs-12 col-md-3">
-            <img src="assets/img/naturaleza.jpg" alt="">
+          <img src="<?php echo get_theme_file_uri() ?>/assets/images/naturaleza.jpg" alt="Gato naturaleza" class="w-100 h-auto">
             <h3 class="section_encab2">Espacios naturaleza</h3>
             <p class="section_cont2">El Hotel cuenta con un amplio bosque completamente cercado y con camaras de vigilancia. un ambiente natural potencia y mejora habilidades de cazeria con alto gasto energetico</p>
 
@@ -127,7 +127,7 @@
             </div>
         </div>
         <div class="col-md-6 img">
-            <img src="assets/img/caracho.jpg" alt="gatoenojon">
+        <img src="<?php echo get_theme_file_uri() ?>/assets/images/caracho.jpg" alt="Gatoenojon" class="w-80 h-auto">
         </div>
         <button>Contacto</button>
         <button data-toggle="modal" data-target="#ver">Ver Mas</button>
@@ -142,7 +142,7 @@
                 </button>
               </div>
               <div class="modal-body">
-                <img src="assets/img/group-of-bengal-sitting-in-front-of-a-white-backgr-P7QDRCF.jpg" class="img-fluid my-3" alt="asado">
+                <img src="<?php echo get_theme_file_uri() ?>/assets/images/group-of-bengal-sitting-in-front-of-a-white-backgr-P7QDRCF.jpg" alt="GatoVengala" class="w-100 h-auto">
                 <p>La gatoterapia es un tratamiento tradicional contra los síntomas del estrés, la ansiedad y el bajo estado de ánimo con la ayuda de gatos domésticos. La utilización de este tipo de terapia basado en la compañía que proveen estos pequeños felinos domésticos puede ayudar a mejorar la salud física y mental y la calidad de vida en general, a través de la interacción amistosa entre el gato y la persona.
 
                   Lo positivo de la gatoterapia es, justamente su sencillez: se fundamenta en la compañía que se ofrecen e gato y la persona y el modo en el que interactúan.</p>
@@ -153,7 +153,7 @@
                 Las personas que viven con gatos en casa tienen una probabilidad más baja de fallecer a causa de un infarto. Esta fue la conclusión a la que llegaron varios investigadores liderados por A. Baun de la Nursing Research. En el caso de la convivencia con perros, no se reportó el mismo efecto protector, posiblemente debido a los cuidados diarios que requieren los canes: los dueños de perros estuvieron en probabilidades cercanas a la media.</p>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button style="position: relative; top:5px"type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
