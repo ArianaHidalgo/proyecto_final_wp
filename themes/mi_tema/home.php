@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto" style="padding-left: 1400px;">
             <li class="nav-item active">
@@ -63,7 +62,7 @@
                     <div class="card-body">
                         <div class="card-title">
                             <div class="icon">
-                                <a href="#"><i class="fas fa-cat"></i></a>
+                                <a href="blog"><i class="fas fa-cat"></i></a>
                             </div>
                             <h1>Blog</h1>
                         </div>

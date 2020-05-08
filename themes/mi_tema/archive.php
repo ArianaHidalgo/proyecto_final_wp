@@ -1,24 +1,20 @@
 <?php get_header() ?>
 
-	<?php if (have_posts()) { ?>
+<?php if (have_posts()) { ?>
+	<h2 class="text-center mb-5"><?php single_term_title(); ?></h2>
+	<?php while ( have_posts() ){ the_post(); ?>
+	<div class="caja text-center">
+            <h4><?php the_title();?></h4>
+            <?php the_post_thumbnail('square',array( 'class' => 'rounded-circle w-80 h-auto ml-190' )); ?>
+			<p> <?php the_excerpt(); ?></p>
+			<h4><?php the_category(' '); ?></h4>
+			<p><?php the_tags ('<span class="text-warning">#</span>',' <span class="text-warning">#</span>', '' ); ?></p>
+            <p class= "text-center"><a href="<?php the_permalink(); ?>" class="btn btn-info btn-sm my-3 ">Ver Mas</a></p>  
+        </div>
 
-	<ul>
-		<?php while ( have_posts() ) { the_post(); ?>
-		<li>
-			<a href="<?php the_permalink() ?>">
-				<?php the_post_thumbnail() ?>
-				<?php the_title() ?>
-				<time datetime="<?php the_time('Y-m-d') ?>"><?php the_time('d \d\e F \d\e Y') ?></time>
-				<?php the_excerpt() ?>
-			</a>
-		</li>
-		<?php }; ?>
-	</ul>
-
+	<?php }; ?>
 	<?php } else { ?>
-		<!-- Content -->
-		<p>No hay elementos</p>
+		<h2 class="text-center mb-5">No Hay Elementos</h2>
 	<?php } wp_reset_query(); ?>
 
-	<?php get_sidebar() ?>
 <?php get_footer() ?>
