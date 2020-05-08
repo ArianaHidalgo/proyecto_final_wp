@@ -12,7 +12,7 @@
 		<h2><?php the_title() ?></h2>
 		<?php the_post_thumbnail('detail', array('class' => 'w-100 h-auto my-4')); ?>
         <h4><?php the_category(' '); ?></h4>
-        <p><?php the_tags ('<span class="text-warning">#</span>',' <span class="text-warning">#</span>', '' ); ?></p>
+        <p><?php the_tags ('<span class="text-info">#</span>',' <span class="text-info">#</span>', '' ); ?></p>
     </div>
     <div>
         <?php the_content() ?>

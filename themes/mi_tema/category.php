@@ -6,7 +6,7 @@
             <h4><?php the_title();?></h4>
             <?php the_post_thumbnail('square',array( 'class' => 'rounded-circle w-80 h-auto ml-190' )); ?>
 			<p> <?php the_excerpt(); ?></p>
-			<p><?php the_tags ('<span class="text-warning">#</span>',' <span class="text-warning">#</span>', '' ); ?></p>
+			<p><?php the_tags ('<span class="text-info">#</span>',' <span class="text-info">#</span>', '' ); ?></p>
             <p class= "text-center"><a href="<?php the_permalink(); ?>" class="btn btn-info btn-sm my-3 ">Ver Mas</a></p>  
         </div>
 

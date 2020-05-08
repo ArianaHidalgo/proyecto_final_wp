@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<?php get_template_part('_includes/main', 'section') ?>
 <div class="container">
         <h1 class="text-center ">Blog</h1>
 
