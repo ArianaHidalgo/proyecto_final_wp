@@ -1,31 +1,6 @@
 <?php get_header(); ?>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto" style="padding-left: 1400px;">
-            <li class="nav-item active">
-              <a class="nav-link text-white" href="#">Nosotros<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#hotel">Hotel</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#terapia">GatoTerapia</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white disabled" href="#" tabindex="-1" aria-disabled="true">Contacto</a>
-            </li>
-          </ul>
-        </div>
-   
 
-    <header class="header">
-        <div class="header_titulo">
-            <p class="header_sub">HOTEL, VETERINARIA Y TIENDA ESPECIALIZADA EN FELINOS</p>
-            <h1 class="header_tit">Mi Gato Azir</h1>
-            <h3 class="header_tit2">Atencion a domicilio y envios a todo chile</h3>
-            <button class="header_button">URGENCIA</button>
-        </div>
-      
-    </header>
+        <?php get_template_part('_includes/header', 'section') ?>
 
     <main class="main">
         <h3 class="main_titulo">Servicios</h3>
@@ -36,7 +11,7 @@
                     <div class="card-body">
                         <div class="card-title">
                             <div class="icon">
-                                <a href="#"><i class="fas fa-user-md"></i></a>
+                                <a href="veterinaria"><i class="fas fa-user-md"></i></a>
                             </div>
                             <h1>Veterinaria</h1>
                         </div>
@@ -79,7 +54,7 @@
             <p class="section_encab">Cariño y atencion</p>
             <h2 class="section_tit">Servicio Hotel de lujo</h2>
             <p class="section_conte">con mas de 5 años de experiencia en cuidado felino, Mi Gato Azir abre el primer Hotel Premium felino a nivel nacional, totalmente equipado y con personal capacitado en situaciones de riesgo para darle a tu minino la mejor experiencia mientras tu no estas con el, puedes hacerle seguimiento 24/7 mediante camaras que tenemos en diferentes puntos del lugar transmitiendo continuamente</p>
-            <button>INFORMACION Y RESERVAS</button>
+            <a href="hotel"><button>INFORMACION Y RESERVAS</button></a>
         </div>
         <div class="section_extra col-xs-12 col-md-3">
         <img src="<?php echo get_theme_file_uri() ?>/assets/images/comida.jpg" alt="Gato comiendo" class="w-100 h-auto">
@@ -129,7 +104,7 @@
         <div class="col-md-6 img">
         <img src="<?php echo get_theme_file_uri() ?>/assets/images/caracho.jpg" alt="Gatoenojon" class="w-80 h-auto">
         </div>
-        <button>Contacto</button>
+        <a href="contacto"><button>Contacto</button></a>
         <button data-toggle="modal" data-target="#ver">Ver Mas</button>
         <!-- Modal Ver mas -->
         <div class="modal fade" id="ver" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
