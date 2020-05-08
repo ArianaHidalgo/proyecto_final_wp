@@ -16,7 +16,8 @@
     </div>
     <div>
         <?php the_content() ?>
-    </div>
+	</div>
+	<p class= "text-center"><a href="?page_id=57" class="btn btn-info btn-sm my-5">Volver al Blog</a></p>
 </article>
 	<?php } ?>
 <?php } else { ?>

@@ -62,7 +62,7 @@
                     <div class="card-body">
                         <div class="card-title">
                             <div class="icon">
-                                <a href="blog"><i class="fas fa-cat"></i></a>
+                                <a href="?page_id=57"><i class="fas fa-cat"></i></a>
                             </div>
                             <h1>Blog</h1>
                         </div>
